@@ -1,6 +1,6 @@
 // sass --watch main.scss:main.css
-// $main-color: #521751;
-$colors: (main: #521751, secondary: #fa923f, background:#fae5ff );
+$main-color: #521751;
+$colors: (main: $main-color, secondary: #fa923f, background: lighten($main-color) );
 $border-default: 0.05rem solid map-get($colors, main);
 
 @import "typography.css";
