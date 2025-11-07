@@ -95,7 +95,7 @@ body {
     &:hover,
     &:active {
       color: map.get(variables.$colors, background);
-      background: map.get(variables.$colors, background);
+      background: map.get(variables.$colors, secondary);
       border-color: map.get(variables.$colors, secondary);
     }
 
