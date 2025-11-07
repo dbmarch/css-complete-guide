@@ -69,10 +69,9 @@ body {
 
 .section-header {
   border-bottom: variables.$border-default;
-}
-
-.section-header h1 {
-  margin: 0 0 variables.$size-default 0;
+  h1 {
+    margin: 0 0 variables.$size-default 0;  
+  }
 }
 
 .documentation-links {
@@ -93,11 +92,13 @@ body {
     display: block;
     padding: variables.$size-tiny;
     border: variables.$border-default;
+    &:hover,
+    &:active {
+      color: map.get(variables.$colors, background);
+      background: map.get(variables.$colors, background);
+      border-color: map.get(variables.$colors, secondary);
     }
-  .documentation-link:hover,
-  .documentation-link:active {
-    color: map.get(variables.$colors, background);
-    background: map.get(variables.$colors, background);
-    border-color: map.get(variables.$colors, secondary);
-  }
+
+
+    }
 }

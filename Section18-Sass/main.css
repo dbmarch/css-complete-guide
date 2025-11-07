@@ -61,7 +61,6 @@ body {
 .section-header {
   border-bottom: 0.05rem solid green;
 }
-
 .section-header h1 {
   margin: 0 0 1rem 0;
 }
@@ -87,8 +86,7 @@ body {
   padding: 0.2rem;
   border: 0.05rem solid green;
 }
-.documentation-links .documentation-link:hover,
-.documentation-links .documentation-link:active {
+.documentation-links .documentation-link:hover, .documentation-links .documentation-link:active {
   color: #e6ffe6;
   background: #e6ffe6;
   border-color: #fa923f;
