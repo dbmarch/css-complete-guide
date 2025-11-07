@@ -1,8 +1,12 @@
+@use "sass:color";
+
 // sass --watch main.scss:main.css
 // $main-color: #521751;
 //$main-color: black;
 $main-color: green;
-$colors: (main: $main-color, secondary: #fa923f, background: lighten($main-color, 70%) );
+
+$lighter-color: color.adjust($main-color, $lightness: 70%);
+$colors: (main: $main-color, secondary: #fa923f, background: $lighter-color );
 $size-default: 1rem;
 $size-tiny: 0.2rem;
 $border-default: 0.05rem solid map-get($colors, main);

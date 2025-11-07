@@ -1,6 +1,7 @@
-@import "_variables.scss";
+@use "sass:map";
+@use "_variables.scss";
+@use "typography.scss";
 
-@import "typography.css";
 html {
   font-size: 94.75%;
 }
@@ -27,11 +28,11 @@ body {
 }
 
 .sass-introduction {
-  border: $border-default;
-  background: map-get($colors, background);
-  padding: $size-default * 2;
+  border: variables.$border-default;
+  background: map.get(variables.$colors, background);
+  padding: variables.$size-default * 2;
   text-align: center;
-  box-shadow: $border-default;
+  box-shadow: variables.$border-default;
   width: 90%;
   box-sizing: border-box;
 }
@@ -41,26 +42,26 @@ body {
 }
 
 .sass-details {
-  border: $border-default;
-  background: map-get($colors, background);
-  padding: $size-default;
+  border: variables.$border-default;
+  background: map.get(variables.$colors, background);
+  padding: variables.$size-default;
   text-align: center;
-  margin: $size-default*2 0;
+  margin: variables.$size-default*2 0;
   width: 90%;
   box-sizing: border-box;
 }
 
 .section-header {
-  border-bottom: $border-default;
+  border-bottom: variables.$border-default;
 }
 
 .section-header h1 {
-  margin: 0 0 $size-default 0;
+  margin: 0 0 variables.$size-default 0;
 }
 
 .documentation-links {
   list-style: none;
-  margin: $size-default 0 0 0;
+  margin: variables.$size-default 0 0 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,22 +70,22 @@ body {
   flex-direction: column;
 
   li{
-    margin: $size-tiny 0;
-    background: map-get($colors, background);
+    margin: variables.$size-tiny 0;
+    background: map.get(variables.$colors, background);
   }
 
     .documentation-link {
     text-decoration: none;
-    color: map-get($colors, main);
+    color: map.get(variables.$colors, main);
     display: block;
-    padding: $size-tiny;
-    border: $border-default;
+    padding: variables.$size-tiny;
+    border: variables.$border-default;
     }
   .documentation-link:hover,
   .documentation-link:active {
-    color: map-get($colors, background);
-    background: map-get($colors, background);
-    border-color: map-get($colors, secondary);
+    color: map.get(variables.$colors, background);
+    background: map.get(variables.$colors, background);
+    border-color: map.get(variables.$colors, secondary);
   }
 }
 
@@ -94,7 +95,7 @@ body {
   }
 
   .container {
-    padding: $size-default * 3 0;
+    padding: variables.$size-default * 3 0;
   }
 
   .sass-introduction,
